@@ -13,7 +13,7 @@
   font-weight: 700;
 }
 
-/* Grid tartibi: ko‘proq qator */
+/* Grid tartibi */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -25,17 +25,36 @@
 
 /* Har bir mahsulot kartasi */
 .product-card {
-  background-color: #fff;
+  position: relative;
+  background-color: #fff0f2;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(255, 77, 109, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
   cursor: pointer;
 }
 
+/* Hover effekti */
 .product-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 28px rgba(255, 77, 109, 0.3);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 35px rgba(255, 77, 109, 0.35);
+}
+
+/* “Yorqin nur” effekti pastdan */
+.product-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(0deg, rgba(255,77,109,0.2), transparent);
+  transition: height 0.4s ease;
+  border-radius: 0 0 16px 16px;
+}
+
+.product-card:hover::after {
+  height: 40%;
 }
 
 /* Rasmlar */
@@ -44,18 +63,18 @@
   height: 200px;
   object-fit: cover;
   display: block;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .product-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 /* Ma'lumotlar qismi */
 .info {
   padding: 15px;
   text-align: center;
-  background-color: #fff0f2;
+  background-color: transparent;
   transition: background 0.3s ease;
 }
 
@@ -64,6 +83,13 @@
   color: #ff4d6d;
   font-size: 1.2rem;
   font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover paytida sarlavha jonlanadi */
+.product-card:hover .info h3 {
+  color: #ff1f4b;
+  transform: scale(1.07);
 }
 
 .info span {

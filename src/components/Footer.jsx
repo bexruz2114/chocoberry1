@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-item">
           <h4>Contact Us</h4>
-          <p><FaPhone /> +998 (33) 552 36 06</p>
+          <p> +998 (33) 552 36 06</p>
           <p><FaTelegramPlane /> Telegram</p>
         
           <a href="https://www.instagram.com/chocoberry__namangan/">  <p><FaInstagram />Instagram</p></a>

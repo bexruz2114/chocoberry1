@@ -31,6 +31,11 @@
   font-size: 1rem;
   font-weight: 600;
 }
+.footer-item .phone-icon {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
 
 .footer-item p,
 .footer-item a {
