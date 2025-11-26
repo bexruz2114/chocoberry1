@@ -30,6 +30,10 @@ import img27 from "../assets/27.png";
 import img28 from "../assets/28.png";
 import img29 from "../assets/29.png";
 import img30 from "../assets/30.png";
+import img31 from "../assets/31.png"
+import img32 from "../assets/32.png"
+import img33 from "../assets/33.png"
+
 
 
 const products = [
@@ -63,6 +67,10 @@ const products = [
   { name: "Клубника в шоколаде", price: "700 000 сум", img: img28 },
   { name: "Клубника в шоколаде малинкий", price: "250 000 сум", img: img29 },
   { name: "Клубника в белом и молочном шоколаде индивидуальный дизайн 25 штук ", price: "400 000 сум", img: img30 },
+  { name: "Клубника в шоколаде", price: "700 000 сум", img: img31 },
+  { name: "Клубника в шоколаде", price: "700 000 сум", img: img32 },
+  { name: "Клубника в шоколаде", price: "700 000 сум", img: img33 },
+
 ];
 
 
